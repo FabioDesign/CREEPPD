@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("../webfonts/flaticon1fc8.woff2?6418ae0cb468940da00709536ac30023") format("woff2"),
+url("../webfonts/flaticon1fc8.woff?6418ae0cb468940da00709536ac30023") format("woff"),
+url("../webfonts/flaticon1fc8.eot?6418ae0cb468940da00709536ac30023#iefix") format("embedded-opentype"),
+url("../webfonts/flaticon1fc8.html?6418ae0cb468940da00709536ac30023") format("truetype"),
+url("../webfonts/flaticon1fc8-2.html?6418ae0cb468940da00709536ac30023#flaticon_mycollection") format("svg")
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-teacher:before {
+    content: "\f101";
+}
+.flaticon-skills:before {
+    content: "\f102";
+}
+.flaticon-rating:before {
+    content: "\f103";
+}
+.flaticon-online-lesson:before {
+    content: "\f104";
+}
+.flaticon-instructor:before {
+    content: "\f105";
+}
+.flaticon-certificate:before {
+    content: "\f106";
+}
+.flaticon-member:before {
+    content: "\f107";
+}
+.flaticon-chapter:before {
+    content: "\f108";
+}
+.flaticon-watching-a-movie:before {
+    content: "\f109";
+}
+.flaticon-learning:before {
+    content: "\f10a";
+}
+.flaticon-abstract:before {
+    content: "\f10b";
+}
+

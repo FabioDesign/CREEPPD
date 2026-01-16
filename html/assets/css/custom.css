@@ -1,0 +1,55 @@
+.header-main .main-menu ul li a{
+  font-weight: bold;
+}
+.header-main .main-menu ul ul li a{
+  text-transform: none;
+}
+.header-top-wrapper {
+  padding: 10px 0;
+  font-size: 14px;
+}
+.courses-content h3, .choose-us-box h3{
+  text-transform: none;
+  font-size: 22px;
+  line-height: 1.2;
+}
+.choose-us-content .list-item li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.choose-us-content .list-item li {
+  font-size: 18px;
+  font-weight: 500;
+  /* color: var(--header); */
+}
+.choose-us-content .list-item li i {
+  color: var(--theme);
+  margin-right: 5px;
+}
+.footer-bottom {
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.fl-infos {
+  font-size: 14px;
+  color: #FFF;
+}
+.marquee-rtl> :first-child {
+  display: inline-block;
+  padding-right: 2em;
+  padding-left: 100%;
+  white-space: nowrap;
+  animation: defilement-rtl 25s infinite linear;
+  will-change: transform;
+  cursor: pointer;
+}
+.marquee-rtl:hover :first-child {
+  animation-play-state: paused;
+}
+@keyframes defilement-rtl {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
