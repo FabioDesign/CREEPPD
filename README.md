@@ -16,7 +16,8 @@ Apache 2.4
 ```
 git init
 git remote add origin https://github.com/FabioDesign/CREEPPD.git
-git branch -M main
+git fetch origin
+git checkout -f main
 ```
 
 2. Installer Log-viewer
