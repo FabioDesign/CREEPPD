@@ -1,74 +1,25 @@
 @extends('master')
 
 @section('content')
-    <!-- Search Area Start -->
-    <div class="search-wrap">
-        <div class="search-inner">
-            <i class="fas fa-times search-close" id="search-close"></i>
-            <div class="search-cell">
-                <form method="get">
-                    <div class="search-field-holder">
-                        <input type="search" class="main-search-input" placeholder="Search...">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- breadcrumb-wrapper-section Start -->
-    <section class="breadcrumb-wrapper fix bg-cover" style="background-image: url(/assets/img/breadcrumb/bg.jpg);">
-        <div class="container">
-            <div class="row">
-                <div class="page-heading">
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">Mot du Directeur Général</h2>
-                    <ul class="breadcrumb-list wow fadeInUp" data-wow-delay=".5s">
-                        <li>
-                            <a href="/">Accueil</a>
-                        </li>
-                        <li><i class="fa-solid fa-chevron-right"></i></li>
-                        <li>Qui sommes-nous ?</li>
-                        <li><i class="fa-solid fa-chevron-right"></i></li>
-                        <li>Mot du Directeur Général</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Team-section Start -->
     <section class="team-details-section fix section-padding">
         <div class="container">
             <div class="team-details-wrapper">
                 <div class="row g-5 align-items-center">
-                    <div class="col-lg-4">
-                        <div class="thumb">
-                            <img src="/assets/img/team/details-1.jpg" alt="img">
-                        </div>
-                    </div>
                     <div class="col-lg-8">
                         <div class="details-content">
                             <p>
-                                Bring to the table win-win survival strategies to ensure proac domination. At the end of the
-                                day, going forward, a new normal that has evolve from generation is on the runway heading
-                                towards a streamlined clou solution. User generated content in real-time will have multiple.
+                                Dans un monde en constante évolution, où les défis se multiplient et les incertitudes s'accroissent, il est plus que jamais nécessaire de réfléchir et d'agir de manière globale et intégrée dans l’optique d’y relever les défis majeurs. Le Centre de Recherche en Économie, Environnement, Projet et Paix Durable (CREEPPD) est à la pointe de cette réflexion en réunissant des experts de divers domaines pour analyser les enjeux et proposer des solutions innovantes. Il est un cadre de réflexion, de recherche et d'action pour un avenir plus durable et plus équitable. Nous intervenons dans la formation, l’étude, l’appui-conseil et les réalisations. Nous sommes spécialisés dans la Gouvernance Economique et Entrepreneuriale, La Gouvernance Environnementale et Développement Durable, la Gouvernance des Conflits et de recherche de paix Durable. Nous sommes fiers de diriger le CREEPPD et sommes persuadés qu’il est le lieu de référence pour les chercheurs, les décideurs, et les acteurs de la société civile qui cherchent à comprendre et à résoudre les défis de notre époque. Nous sommes plus que convaincus que la recherche, la formation et la réalisation sont les trois piliers d'un développement durable et équitable.
                             </p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi animi hic nulla! Eligendi ex, eius cum molestias, amet libero optio commodi harum enim assumenda quasi dicta quis eveniet delectus totam.</p>
-                            <p>
-                                Bring to the table win-win survival strategies to ensure proac domination. At the end of the
-                                day, going forward, a new normal that has evolve from generation is on the runway heading
-                                towards a streamlined clou solution. User generated content in real-time will have multiple.
-                            </p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi animi hic nulla! Eligendi ex, eius cum molestias, amet libero optio commodi harum enim assumenda quasi dicta quis eveniet delectus totam.</p>
-                            <p>
-                                Bring to the table win-win survival strategies to ensure proac domination. At the end of the
-                                day, going forward, a new normal that has evolve from generation is on the runway heading
-                                towards a streamlined clou solution. User generated content in real-time will have multiple.
-                            </p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi animi hic nulla! Eligendi ex, eius cum molestias, amet libero optio commodi harum enim assumenda quasi dicta quis eveniet delectus totam.</p>
-                            <div style="text-align: right;margin-top:15px;">
-                                                            <h4>Fabrice OGOU</h4>
-                            <span style="font-size: 15px;">Directeur générale</span>
-                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="thumb">
+                            <img src="/assets/img/team/team-12.jpg" alt="img">
+                        </div>
+                        <div class="text-center mt-3">
+                            <h4>Dr Jean-Pierre Moro EBY</h4>
+                            <span style="font-size: 15px;">Directeur Général</span>
                         </div>
                     </div>
                 </div>

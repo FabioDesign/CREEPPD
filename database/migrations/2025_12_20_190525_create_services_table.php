@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('code', 20)->unique();
+            $table->string('title', 50);
             $table->text('libelle');
             $table->string('filename', 15);
             $table->tinyInteger('status')->default(1);

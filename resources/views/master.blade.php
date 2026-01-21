@@ -6,10 +6,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="jacques_cyrille@yahoo.fr">
+  <meta name="author" content="fabiodesign2010@gmail.com">
   <meta name="description" content="CREEPPD  - Centre de Recherche en Economie, Environnement, Projets et paix Durable">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
   <!-- ======== Page title ============ -->
-  <title>CREEPPD - Centre de Recherche en Economie, Environnement, Projets et paix Durable</title>
+  <title>CREEPPD - {{ $title }}</title>
   <!--<< Favcion >>-->
   <link rel="shortcut icon" href="/assets/img/icon/favicon.png">
   <!--<< Bootstrap min.css >>-->
@@ -30,6 +31,8 @@
   <link rel="stylesheet" href="/assets/css/color.css">
   <!--<< flacticon.css >>-->
   <link rel="stylesheet" href="/assets/css/flacticon.css">
+  <!--<< SweetAlert2.css >>-->
+  <link rel="stylesheet" href="/assets/css/sweetalert2.min.css">
   <!--<< Main.css >>-->
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/custom.css">
@@ -111,10 +114,6 @@
               </button>
             </div>
           </div>
-          <p class="text d-none d-xl-block">
-            Nullam dignissim, ante scelerisque the is euismod fermentum odio sem semper the is erat, a feugiat leo urna
-            eget eros. Duis Aenean a imperdiet risus.
-          </p>
           <div class="mobile-menu fix mb-3"></div>
           <div class="offcanvas__contact">
             <h4>Contacts</h4>
@@ -124,7 +123,7 @@
                   <i class="fal fa-map-marker-alt"></i>
                 </div>
                 <div class="offcanvas__contact-text">
-                  <a target="_blank" href="#">Abidjan - Cocody - Riviera</a>
+                  <a href="#">{{ env('CONTACT_ADDRESS') }}</a>
                 </div>
               </li>
               <li class="d-flex align-items-center">
@@ -132,7 +131,7 @@
                   <i class="fal fa-envelope"></i>
                 </div>
                 <div class="offcanvas__contact-text">
-                  <a href="mailto:creeppd2025@gmail.com">creeppd2025@gmail.com</a>
+                  <a href="mailto:{{ env('CONTACT_ADDRESS') }}">{{ env('CONTACT_ADDRESS') }}</a>
                 </div>
               </li>
               <li class="d-flex align-items-center">
@@ -145,7 +144,7 @@
                   <i class="far fa-phone"></i>
                 </div>
                 <div class="offcanvas__contact-text">
-                  <a href="tel:+11002345909">+11002345909</a>
+                  <a href="tel:{{ env('CONTACT_PHONE') }}">{{ env('CONTACT_PHONE') }}</a>
                 </div>
               </li>
             </ul>
@@ -174,11 +173,11 @@
         <ul class="contact-list">
           <li>
             <i class="fal fa-map-marker-alt"></i>
-            Abidjan - Cocody - Riviera
+            {{ env('CONTACT_ADDRESS') }}
           </li>
           <li>
             <i class="far fa-envelope"></i>
-            <a href="mailto:creeppd2025@gmail.com " class="link">creeppd2025@gmail.com </a>
+            <a href="mailto:{{ env('CONTACT_EMAIL') }}" class="link">{{ env('CONTACT_EMAIL') }}</a>
           </li>
         </ul>
         <div class="social-icon d-flex align-items-center">
@@ -190,7 +189,7 @@
         </div>
       </div>
       <div class="marquee-rtl">
-        <div class="fl-infos">L'expertise au service de la gestion et du développement durable.</div>
+        <div class="fl-infos">{{ env('SLOGAN') }}</div>
       </div>
     </div>
   </div>
@@ -224,35 +223,35 @@
                     <ul class="submenu">
                       <li><a href="/wordceo">Mot du Directeur Général</a></li>
                       <li><a href="/presentation">Présentation de CREEPPD</a></li>
-                      <li><a href="#">Axe stratégique</a></li>
-                      <li><a href="#">Organigramme</a></li>
+                      <li><a href="/strategic">Axes stratégiques</a></li>
+                      <li><a href="/organigramme">Organigramme</a></li>
                     </ul>
                   </li>
-                  <li class="@php echo $currentMenu == 'why_choose_us' ? 'active':'' @endphp has-dropdown">
+                  <li class="@php echo $currentMenu == 'services' ? 'active':'' @endphp has-dropdown">
                     <a href="#">
                       Pourquoi nous choisir ?
                       <i class="fas fa-angle-down"></i>
                     </a>
                     <ul class="submenu">
-                      <li><a href="#">Le capital humain</a></li>
-                      <li><a href="#">La formation pratique</a></li>
-                      <li><a href="#">Le suivi-évaluation</a></li>
+                      <li><a href="/services/caphum">Le capital humain</a></li>
+                      <li><a href="/services/formprat">La formation pratique</a></li>
+                      <li><a href="/services/suiveval">Le suivi-évaluation</a></li>
                     </ul>
                   </li>
-                  <li class="@php echo $currentMenu == 'services' ? 'active':'' @endphp">
+                  <li class="@php echo $currentMenu == 'prestations' ? 'active':'' @endphp">
                     <a href="#">
                       Nos prestations
                       <i class="fas fa-angle-down"></i>
                     </a>
                     <ul class="submenu">
-                      <li><a href="/prestations">Formations</a></li>
-                      <li><a href="/prestations">Etudes</a></li>
-                      <li><a href="/prestations">Conseils</a></li>
-                      <li><a href="/prestations">Réalisations</a></li>
+                      <li><a href="/prestations/form">Nos Formations</a></li>
+                      <li><a href="/prestations/etud">Nos Etudes</a></li>
+                      <li><a href="/prestations/cons">Nos Conseils</a></li>
+                      <li><a href="/prestations/real">Nos Réalisations</a></li>
                     </ul>
                   </li>
-                  <li class="@php echo $currentMenu == 'contacts' ? 'active':'' @endphp">
-                    <a href="/contacts">Nous contacter</a>
+                  <li class="@php echo $currentMenu == 'contact' ? 'active':'' @endphp">
+                    <a href="/contact">Nous contacter</a>
                   </li>
                 </ul>
               </nav>
@@ -262,20 +261,27 @@
       </div>
     </div>
   </header>
-
-  <!-- Search Area Start -->
-  <div class="search-wrap">
-    <div class="search-inner">
-      <i class="fas fa-times search-close" id="search-close"></i>
-      <div class="search-cell">
-        <form method="get">
-          <div class="search-field-holder">
-            <input type="search" class="main-search-input" placeholder="Rechercher ...">
+  @if($currentMenu != 'home')
+  <!-- breadcrumb-wrapper-section Start -->
+  <section class="breadcrumb-wrapper fix bg-cover" style="background-image: url(/assets/img/breadcrumb/bg.jpg);">
+      <div class="container">
+          <div class="row">
+              <div class="page-heading">
+                  <h2 class="wow fadeInUp" data-wow-delay=".3s">{{ $title }}</h2>
+                  <ul class="breadcrumb-list wow fadeInUp" data-wow-delay=".5s">
+                      <li><a href="/">Accueil</a></li>
+                      @if($menu != '')
+                      <li><i class="fa-solid fa-chevron-right"></i></li>
+                      <li><a href="#">{{ $menu }}</a></li>
+                      @endif
+                      <li><i class="fa-solid fa-chevron-right"></i></li>
+                      <li>{{ $title }}</li>
+                  </ul>
+              </div>
           </div>
-        </form>
       </div>
-    </div>
-  </div>
+  </section>
+  @endif
   
 @yield('content')
 
@@ -300,11 +306,11 @@
                   <img src="/assets/img/partner/kecholding.jpg" style="height: 110px; width: 155px;" alt="KEC Holding">
               </div>
           </div>
-          <div class="swiper-slide">
+          {{-- <div class="swiper-slide">
               <div class="brand-image">
                   <img src="/assets/img/partner/creedd.jpg" style="height: 110px; width: 155px;" alt="KEC Holding">
               </div>
-          </div>
+          </div> --}}
         </div>
       </div>
     </div>
@@ -316,9 +322,6 @@
       <div class="footer-widget-wrapper">
         <div class="footer-list-wrapper">
           <div class="footer-logo wow fadeInUp" data-wow-delay=".3s">
-            <!-- <a href="/" class="footer-logo">
-              <img src="/assets/img/logo.jpg" style="width: 100px;" alt="logo-img">
-            </a> -->
           </div>
           <ul class="footer-list wow fadeInUp" data-wow-delay=".5s">
             <li>
@@ -331,7 +334,7 @@
               <a href="#">Pourquoi nous choisir ?</a>
             </li>
             <li>
-              <a href="">Nos prestations</a>
+              <a href="#">Nos prestations</a>
             </li>
             <li>
               <a href="#">Nous Contacter</a>
@@ -341,7 +344,7 @@
         <div class="fotter-wrapper">
           <div class="footer-content">
             <p class="wow fadeInUp" data-wow-delay=".3s">
-              Le cabinet CREEPPD est un cabinet de droit privé Ivoirien de formation, d’étude, de conseil et de réalisation, spécialisé dans la Gouvernance Economique et Entrepreneuriale, Gouvernance Environnementale et Développement Durable, Gouvernance des Conflits et de recherche de paix Durable.
+              CREEPPD est un centre de droit privé Ivoirien. C’est un cadre de réflexion, de recherche et d'action pour un avenir plus durable et plus équitable. Nous intervenons dans la formation, l’étude, l’appui-conseil et les réalisations. Nous sommes spécialisés dans la Gouvernance Economique et Entrepreneuriale, La Gouvernance Environnementale et Développement Durable, la Gouvernance des Conflits et de recherche de paix Durable.
             </p>
             <div class="social-icon d-flex align-items-center wow fadeInUp" data-wow-delay=".5s">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -356,9 +359,8 @@
                 <i class="fa-solid fa-phone"></i>
               </div>
               <div class="content">
-                <p>Téléphone</p>
                 <h4>
-                  <a href="tel:5185643200">+225 0707070707</a>
+                  <a href="tel:{{ env('CONTACT_PHONE') }}">{{ env('CONTACT_PHONE') }}</a>
                 </h4>
               </div>
             </div>
@@ -367,9 +369,8 @@
                 <i class="fa-solid fa-square-chevron-down"></i>
               </div>
               <div class="content">
-                <p>Adresse Email</p>
                 <h4>
-                  <a href="mailto: creeppd2025@gmail.com" style="text-transform: none;"> creeppd2025@gmail.com</a>
+                  <a href="mailto: {{ env('CONTACT_EMAIL') }}" style="text-transform: none;"> {{ env('CONTACT_EMAIL') }}</a>
                 </h4>
               </div>
             </div>
@@ -378,10 +379,7 @@
                 <i class="fa-solid fa-clock"></i>
               </div>
               <div class="content">
-                <!-- <p>Mon – Sat</p> -->
-                <h4>
-                  Abidjan - Cocody - Riviera
-                </h4>
+                <h4>{{ env('CONTACT_ADDRESS') }}</h4>
               </div>
             </div>
           </div>
@@ -415,6 +413,8 @@
   <script src="/assets/js/jquery.meanmenu.min.js"></script>
   <!--<< Magnific Popup Js >>-->
   <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+  <!--<< SweetAlert2 Js >>-->  
+  <script src="/assets/js/sweetalert2.all.min.js"></script>
   <!--<< Wow Animation Js >>-->
   <script src="/assets/js/wow.min.js"></script>
   <!--<< Main.js >>-->

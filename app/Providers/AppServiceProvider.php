@@ -2,10 +2,7 @@
 
 namespace App\Providers;
 
-use App\Models\Contact;
-use App\Models\Metier;
 use Illuminate\Support\ServiceProvider;
-use Carbon\Carbon;
 
 class AppServiceProvider extends ServiceProvider
 {

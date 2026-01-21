@@ -60,3 +60,19 @@
 p{
   text-align: justify;
 }
+.not-active {
+  pointer-events: none;
+  cursor: none !important;
+  color: #FFF !important;
+  border-color: #909090 !important;
+  background: #909090 !important
+}
+.fieldError {
+  border: 1px solid #E35B5A !important;
+}
+.form-message.error {
+    color: #E95454;
+    padding: 10px 18px;
+    border-radius: 10px;
+    background: rgba(255, 127, 127, .1);
+}

@@ -5,21 +5,9 @@
     <section class="courses-details-section section-padding">
         <div class="container">
             <div class="courses-details-wrapper">
-                <div class="row g-4">
+                <div class="row">
                     <div class="col-lg-8 col-12">
-                        <div class="courses-content">
-                            <h2>
-                                {{ $title }}
-                            </h2>
-                            <div class="details-image">
-                                <img src="/assets/img/services/{{ $filename }}" alt="img">
-                            </div>
-                            <div class="courses-details-content">
-                                <div class="tab-content">
-                                    {!! $libelle !!}
-                                </div>
-                            </div>
-                        </div>
+                        {!! $libelle !!}
                     </div>
                     <div class="col-lg-4 col-12">
                         <div class="main-sideber sticky-style">

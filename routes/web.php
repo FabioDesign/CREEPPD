@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\WebsiteController;
+use App\Http\Controllers\{
+    ContactController,
+    WebsiteController
+};
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +16,6 @@ use App\Http\Controllers\WebsiteController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
 //404
 Route::fallback(function () {
     return redirect('/');
@@ -22,8 +24,15 @@ Route::fallback(function () {
 //FRONTEND
 Route::controller(WebsiteController::class)->group(function () {
     Route::get('/', 'home');
-    Route::get('/contacts', 'contacts');
     Route::get('/wordceo', 'wordceo');
     Route::get('/presentation', 'presentation');
-    Route::get('/prestations', 'prestations');
+    Route::get('/strategic', 'strategic');
+    Route::get('/organigramme', 'organigramme');
+    Route::get('/services/{code}', 'services');
+    Route::get('/prestations/{code}', 'prestations');
+});
+// Route pour les Contacts
+Route::controller(ContactController::class)->group(function () {
+    Route::get('contact', 'index');
+    Route::post('sendmail', 'store');
 });
