@@ -286,6 +286,7 @@
 @yield('content')
 
   <!-- Team-section Start -->
+  {{--
   <section class="team-section section-bg section-padding fix">
     <div class="container">
       <div class="section-title-area">
@@ -306,12 +307,27 @@
                   <img src="/assets/img/partner/kecholding.jpg" style="height: 110px; width: 155px;" alt="KEC Holding">
               </div>
           </div>
-          {{-- <div class="swiper-slide">
+          <div class="swiper-slide">
               <div class="brand-image">
                   <img src="/assets/img/partner/creedd.jpg" style="height: 110px; width: 155px;" alt="KEC Holding">
               </div>
-          </div> --}}
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
+  --}}
+  <section class="team-section section-bg section-padding fix">
+    <div class="container">
+      <div class="section-title-area">
+        <div class="section-title">
+          <h2 class="wow fadeInUp" data-wow-delay=".3s">
+            Nos partenaires
+          </h2>
+        </div>
+      </div>
+      <div class="brand-image">
+        <img src="/assets/img/partner/kecholding.jpg" style="height: 110px; width: 155px;" alt="KEC Holding">
       </div>
     </div>
   </section>
