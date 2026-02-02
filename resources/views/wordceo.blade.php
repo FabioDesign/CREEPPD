@@ -15,7 +15,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="thumb">
-                            <img src="/assets/img/team/ceo.jpg" alt="img">
+                            <img src="/assets/img/team/202602020905.jpg" alt="img">
                         </div>
                         <div class="text-center mt-3">
                             <h4>Dr Jean-Pierre Moro EBY</h4>
