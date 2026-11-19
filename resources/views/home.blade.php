@@ -73,7 +73,7 @@
             <div class="courses-content d-block text-center">
               <div class="content">
                 <h3>
-                  <a href="/prestations/form">Nos Formations</a>
+                  <a href="/prestations/form">Nos Formations certifiantes</a>
                 </h3>
               </div>
             </div>
@@ -101,7 +101,7 @@
             <div class="courses-content d-block text-center">
               <div class="content">
                 <h3>
-                  <a href="/prestations/cons">Nos Conseils</a>
+                  <a href="/prestations/cons">Nos Conseils et appuis</a>
                 </h3>
               </div>
             </div>

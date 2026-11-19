@@ -244,10 +244,10 @@
                       <i class="fas fa-angle-down"></i>
                     </a>
                     <ul class="submenu">
-                      <li><a href="/prestations/form">Nos Formations</a></li>
-                      <li><a href="/prestations/etud">Nos Etudes</a></li>
-                      <li><a href="/prestations/cons">Nos Conseils</a></li>
-                      <li><a href="/prestations/real">Nos Réalisations</a></li>
+                      <li><a href="/prestations/form">Formations certifiantes</a></li>
+                      <li><a href="/prestations/etud">Etudes</a></li>
+                      <li><a href="/prestations/cons">Conseils et appuis</a></li>
+                      <li><a href="/prestations/real">Réalisations</a></li>
                     </ul>
                   </li>
                   <li class="@php echo $currentMenu == 'contact' ? 'active':'' @endphp">
@@ -270,12 +270,8 @@
                   <h2 class="wow fadeInUp" data-wow-delay=".3s">{{ $title }}</h2>
                   <ul class="breadcrumb-list wow fadeInUp" data-wow-delay=".5s">
                       <li><a href="/">Accueil</a></li>
-                      @if($menu != '')
                       <li><i class="fa-solid fa-chevron-right"></i></li>
-                      <li><a href="#">{{ $menu }}</a></li>
-                      @endif
-                      <li><i class="fa-solid fa-chevron-right"></i></li>
-                      <li>{{ $title }}</li>
+                      <li>{{ $menu }}</li>
                   </ul>
               </div>
           </div>

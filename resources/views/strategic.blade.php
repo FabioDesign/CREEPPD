@@ -46,7 +46,7 @@
                                 <ul class="list-item">
                                     <li>
                                         <i class="fas fa-check-circle"></i>
-                                        <b>Objectifs de développement :</b> définir des objectifs de développement économique et social pour la région.
+                                        <b>Objectifs de développement :</b> définir des objectifs de développement économique et social durable.
                                     </li>
                                     <li>
                                         <i class="fas fa-check-circle"></i>
@@ -64,7 +64,7 @@
                             </div>
                             <div class="section-title mt-5">
                                 <p class="mt-3 mt-mb-0 wow fadeInUp" data-wow-delay=".5s">
-                                    Il est important de noter que les axes stratégiques du CREEPPD peuvent varier en fonction des besoins et des priorités de la région.
+                                    Il est important de noter que les axes stratégiques du CREEPPD peuvent varier en fonction des besoins et des priorités des demandeurs de prestations.
                                 </p>
                             </div>
                         </div>
@@ -77,10 +77,10 @@
                                 </div>
                                 <div class="news-widget-categories mt-5">
                                     <ul>
-                                        <li><a href="/prestations/form"><img src="/assets/img/icon/cheak.svg" alt="img"> Nos Formations</a></li>
-                                        <li><a href="/prestations/etud"><img src="/assets/img/icon/cheak.svg" alt="img"> Nos Etudes</a></li>
-                                        <li><a href="/prestations/cons"><img src="/assets/img/icon/cheak.svg" alt="img"> Nos Conseils</a></li>
-                                        <li><a href="/prestations/real"><img src="/assets/img/icon/cheak.svg" alt="img"> Nos Réalisations</a></li>
+                                        <li><a href="/prestations/form"><img src="/assets/img/icon/cheak.svg" alt="img"> Formations certifiantes</a></li>
+                                        <li><a href="/prestations/etud"><img src="/assets/img/icon/cheak.svg" alt="img"> Etudes</a></li>
+                                        <li><a href="/prestations/cons"><img src="/assets/img/icon/cheak.svg" alt="img"> Conseils et appuis</a></li>
+                                        <li><a href="/prestations/real"><img src="/assets/img/icon/cheak.svg" alt="img"> Réalisations</a></li>
                                     </ul>
                                 </div>
                             </div>

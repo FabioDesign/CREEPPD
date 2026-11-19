@@ -17,10 +17,10 @@
                                 </div>
                                 <div class="news-widget-categories mt-5">
                                     <ul>
-                                        <li><a href="/prestations/form"><img src="/assets/img/icon/cheak.svg" alt="img"> Nos Formations</a></li>
-                                        <li><a href="/prestations/etud"><img src="/assets/img/icon/cheak.svg" alt="img"> Nos Etudes</a></li>
-                                        <li><a href="/prestations/cons"><img src="/assets/img/icon/cheak.svg" alt="img"> Nos Conseils</a></li>
-                                        <li><a href="/prestations/real"><img src="/assets/img/icon/cheak.svg" alt="img"> Nos Réalisations</a></li>
+                                        <li><a href="/prestations/form"><img src="/assets/img/icon/cheak.svg" alt="img"> Formations certifiantes</a></li>
+                                        <li><a href="/prestations/etud"><img src="/assets/img/icon/cheak.svg" alt="img"> Etudes</a></li>
+                                        <li><a href="/prestations/cons"><img src="/assets/img/icon/cheak.svg" alt="img"> Conseils et appuis</a></li>
+                                        <li><a href="/prestations/real"><img src="/assets/img/icon/cheak.svg" alt="img"> Réalisations</a></li>
                                     </ul>
                                 </div>
                             </div>

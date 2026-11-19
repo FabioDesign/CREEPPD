@@ -16,7 +16,7 @@ class ContactController extends Controller
     {
         // Title
         $title = "Nous contacter";
-        $menu = '';
+        $menu = 'Contact';
         $currentMenu = 'contact';
 
         return view('contacts', compact('title', 'menu', 'currentMenu'));

@@ -19,7 +19,6 @@
 .choose-us-content .list-item li {
   font-size: 18px;
   font-weight: 500;
-  /* color: var(--header); */
 }
 .choose-us-content .list-item li i {
   color: var(--theme);
@@ -75,4 +74,10 @@ p{
     padding: 10px 18px;
     border-radius: 10px;
     background: rgba(255, 127, 127, .1);
+}
+.text-theme {
+  color: var(--theme) !important;
+}
+.text-justify {
+  text-align: justify !important;
 }

@@ -9,7 +9,13 @@
                     <div class="col-lg-8">
                         <div class="details-content">
                             <p>
-                                Dans un monde en constante évolution, où les défis se multiplient et les incertitudes s'accroissent, il est plus que jamais nécessaire de réfléchir et d'agir de manière globale et intégrée dans l’optique d’y relever les défis majeurs. Le Centre de Recherche en Économie, Environnement, Projet et Paix Durable (CREEPPD) est à la pointe de cette réflexion en réunissant des experts de divers domaines pour analyser les enjeux et proposer des solutions innovantes. Il est un cadre de réflexion, de recherche et d'action pour un avenir plus durable et plus équitable. Nous intervenons dans la formation, l’étude, l’appui-conseil et les réalisations. Nous sommes spécialisés dans la Gouvernance Economique et Entrepreneuriale, La Gouvernance Environnementale et Développement Durable, la Gouvernance des Conflits et de recherche de paix Durable. Nous sommes fiers de diriger le CREEPPD et sommes persuadés qu’il est le lieu de référence pour les chercheurs, les décideurs, et les acteurs de la société civile qui cherchent à comprendre et à résoudre les défis de notre époque. Nous sommes plus que convaincus que la recherche, la formation et la réalisation sont les trois piliers d'un développement durable et équitable.
+                                Dans un monde en constante évolution, où les défis de plus en plus complexes se multiplient, et où les incertitudes s'accroissent, une approche globale et intégrée s’impose pour y répondre avec pertinence. Le Centre de Recherche en Économie, Environnement, Projet et Paix Durable (CREEPPD) se positionne comme un pôle d’excellence et de réflexion stratégique. Il fédère des experts de disciplines complémentaires afin d’analyser les enjeux contemporains et de formuler des solutions innovantes, durables et adaptées. Plus qu’un centre de recherche, le CREEPPD se veut un espace de dialogue, d’expertise et d’action au service d’un développement harmonieux, équitable et pérenne. À ce titre, il déploie ses interventions autour de quatre axes majeurs : la formation, l’étude, l’appui-conseil et la mise en œuvre de plans de développement intégrés. Ses domaines de spécialisation portent sur la Gouvernance Économique et Entrepreneuriale, la Gouvernance Environnementale et le Développement Durable, ainsi que sur la Gestion des Conflits et la consolidation de la Paix durable.<br>
+                                Convaincus que la recherche, la formation, le conseil et l’opérationnalisation des politiques de développement constituent les fondements d’un avenir soutenable dans un monde globalisé, nous ambitionnons de faire du CREEPPD une référence incontournable pour les chercheurs, les décideurs publics et les acteurs de la société civile.<br><br>
+                                <b><i>Bienvenue à CREEPPD !</i></b>
+                                <br>
+                                <b><i>« L’expertise au service de la Gestion et du Développement durable. »</i></b>
+                                <br>
+                                <b><i>« Ensemble pour un monde plus équitable et harmonieux ».</i></b>
                             </p>
                         </div>
                     </div>
@@ -18,7 +24,7 @@
                             <img src="/assets/img/team/202602020905.jpg" alt="img">
                         </div>
                         <div class="text-center mt-3">
-                            <h4>Dr Jean-Pierre Moro EBY</h4>
+                            <h4>Dr Moro Jean-Pierre EBY</h4>
                             <span style="font-size: 15px;">Directeur Général</span>
                         </div>
                     </div>
